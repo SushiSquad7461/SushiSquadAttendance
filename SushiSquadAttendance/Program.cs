@@ -19,7 +19,7 @@ namespace SushiSquadAttendance
         static Program()
         {
             // Register our commands
-            SlashCommands.RegisterCommands<Attendance.AttendanceSlashCommands>(906253258870374460);
+            SlashCommands.RegisterCommands<Attendance.AttendanceSlashCommands>();
 
             SlashCommands.SlashCommandErrored += (s, e) =>
             {
