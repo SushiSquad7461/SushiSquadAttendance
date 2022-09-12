@@ -16,6 +16,13 @@ namespace SushiSquadAttendance
 
         public List<Person> SignInData { get; set; } = new();
 
+        public string AttendanceDBID { get; set; } = "";
+
+        public string RosterDBID { get; set; } = "";
+
+        public string LogDBID { get; set; } = "";
+
+
         static Data()
         {
             if (File.Exists("Data/Config.json"))
@@ -43,7 +50,6 @@ namespace SushiSquadAttendance
             public string Name { get; set; } = "";
             public ulong Id { get; set; }
             public DateTime SignInTime { get; set; }
-            public DateTime SignOutTime { get; set; }
         }
     }
 }
